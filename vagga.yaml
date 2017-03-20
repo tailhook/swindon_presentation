@@ -7,6 +7,8 @@ containers:
     - !GitInstall
       url: https://github.com/hakimel/reveal.js.git
       script: cp -R css/theme/* /usr/lib/python3.5/site-packages/html5css3/thirdparty/revealjs/css/theme
+    environ:
+      PYTHONHASHSEED: 6  # this is to fix order of jquery and reveal
 
 commands:
   rst2html5: !Command

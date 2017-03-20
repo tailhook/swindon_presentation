@@ -2,15 +2,50 @@
 .. meta::
    :author: Paul Colomiets <paul@colomiets.name>
 
+.. role:: fragment
+   :class: fragment
+
 Modern Websocket Gateway Server
 ===============================
 
 
-Serving Websockets
-==================
+Problems Websockets Solve
+=========================
 
-hello
+* :fragment:`Real-Time Push Notifications`
+* :fragment:`Chats`
+* :fragment:`Games`
+* :fragment:`Remote Procedure Calls (RPC)`
 
-----
 
-world
+Classic Web Model
+=================
+
+.. image:: classic-web.svg
+
+
+Adding WS 1
+===================
+
+.. image:: websockets-pubsub.svg
+
+
+Adding WS 2
+===================
+
+.. image:: websockets-single.svg
+
+
+Consequences
+============
+
+* :fragment:`Message loss`
+* :fragment:`Scaling/failover issues`
+* :fragment:`Software upgrade issues`
+* :fragment:`Custom routing`
+
+
+Introducing Swindon
+===================
+
+
