@@ -48,4 +48,13 @@ Consequences
 Introducing Swindon
 ===================
 
+A modern HTTP edge server with smart websocket support
+
+
+Swindon
+=======
+
+* A (Reverse) proxy
+* Serves files
+* Websockets
 
