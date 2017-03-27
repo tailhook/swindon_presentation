@@ -219,7 +219,7 @@ Consistency 3
 CRDT
 ====
 
-Conflict-free Replicated Data Types
+Commutative Replicated Data Types
 
 
 CRDT
@@ -228,12 +228,36 @@ CRDT
 Solves eventual consistency problem
 
 
+CRDT
+====
+
+* Counter/Max
+
+[[ schematic ]]
+
+
+Unread Messages
+===============
+
+* Messages [counter]
+* Last Read [counter]
+
+
 Lattice
 =======
 
+[[ table ]]
 
-Just Do It!
-===========
+
+Lattice
+=======
+
+* Auto-updates room list
+* Conflict-free eventual consistency
+
+
+Simple to Run
+=============
 
 ::
 
