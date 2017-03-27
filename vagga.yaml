@@ -24,6 +24,7 @@ commands:
     - --jquery
     - --reveal-js
     - --reveal-js-opts=theme=blood
+    - --stylesheet-path=my.css
     - --embed-content
     - --pygments
     - presentation.rst

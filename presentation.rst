@@ -5,6 +5,10 @@
 .. role:: fragment
    :class: fragment
 
+.. role:: strike
+   :class: strike
+
+
 Modern Websocket Gateway Server
 ===============================
 
@@ -95,8 +99,8 @@ Key Points
 * Software Updates (*)
 
 
-Data Model
-==========
+Websocket Proto
+===============
 
 * RPC
 * Pub-Sub
@@ -112,11 +116,18 @@ RPC
 * :fragment:`☂ → user1: return "ok"`
 
 
-RPC
-===
+Routing
+=======
 
 * chat.* → chat{1,2,3}
 * pizza.* → pizza{1,2}
+
+
+RPC Features
+============
+
+* Prefix Routing
+* Sticky Auth
 
 
 Pub-Sub
@@ -124,8 +135,8 @@ Pub-Sub
 
 * :fragment:`user1 → backend: I want room "kittens"`
 * :fragment:`backend → ☂: subscribe(user1, @rooms.kittens)`
-* :fragment:`user1 → worker: Send "hello"`
-* :fragment:`backend → ☂: send(@kittens, "user1: hello")`
+* :fragment:`user1 → backend: Send "hello"`
+* :fragment:`backend → ☂: send(@rooms.kittens, "user1: hello")`
 
 
 Swindon vs WAMP
@@ -137,12 +148,91 @@ Swindon vs WAMP
 (*) Web Application Messaging Protocol
 
 
-More Than That
-==============
+Pub-Sub
+=======
+
+* Authorization
+* First time sync
 
 
+Lattice
+=======
 
-Cool Things
+
+The Task
+========
+
+.. image:: chat.png
+
+
+Components
+==========
+
+* Room List
+
+  * Unread Messages
+
+* Chat History
+
+
+Issues
+======
+
+* Multiple tabs/devices
+* Eventual consistentcy
+* Lost/duplicate messages
+
+
+Eventual Consistency
+====================
+
+* user1 -> messages read
+* user2 -> new message
+
+
+Eventual Consistency
+====================
+
+* user1 -> -1 unread
+* user2 -> +1 message
+
+
+:strike:`Pub-Sub`
+=================
+
+
+Consistency 2
+=============
+
+* device1 -> get_rooms
+* device2 -> add_room
+
+Consistency 3
+=============
+
+* device1 -> get_rooms
+* user2 -> new mesage
+* device2 -> add_room
+* user3 -> new mesage
+
+
+CRDT
+====
+
+Conflict-free Replicated Data Types
+
+
+CRDT
+====
+
+Solves eventual consistency problem
+
+
+Lattice
+=======
+
+
+Just Do It!
 ===========
 
 ::
