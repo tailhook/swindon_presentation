@@ -4,3 +4,9 @@
 .reveal .bold {
     font-weight: 900;
 }
+.reveal pre {
+}
+.up {
+    position: relative;
+    top: -200px;
+}

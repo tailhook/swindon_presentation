@@ -16,8 +16,8 @@ Modern Websocket Gateway Server
 ===============================
 
 
-Problems Websockets Solve
-=========================
+Problems
+========
 
 * :fragment:`Real-Time Push Notifications`
 * :fragment:`Chats`
@@ -43,8 +43,8 @@ Adding WS 2
 .. image:: websockets-single.svg
 
 
-Consequences
-============
+Cons.
+=====
 
 * :fragment:`Message loss`
 * :fragment:`Scaling/failover issues`
@@ -75,7 +75,7 @@ Swindon
    :width: 100%
 
 
-Reminder: WS 1
+Recall: WS 1
 ==============
 .. image:: websockets-pubsub.svg
 
@@ -87,7 +87,7 @@ Swindon
    :width: 100%
 
 
-Reminder: WS 2
+Recall: WS 2
 ===================
 
 .. image:: websockets-single.svg
@@ -102,8 +102,8 @@ Key Points
 * Software Updates (*)
 
 
-Websocket Proto
-===============
+WS Proto
+========
 
 * RPC
 * Pub-Sub
@@ -142,8 +142,8 @@ Pub-Sub
 * :fragment:`backend → ☂: send(@rooms.kittens, "user1: hello")`
 
 
-Swindon vs WAMP
-===============
+☂ vs WAMP
+=========
 
 * WAMP: subscription from client
 * Swindon ☂: subscription from backend
@@ -204,13 +204,13 @@ Eventual Consistency
 =================
 
 
-Consistency 2
+Consistency2
 =============
 
 * device1 -> get_rooms
 * device2 -> add_room
 
-Consistency 3
+Consistency3
 =============
 
 * device1 -> get_rooms
@@ -238,8 +238,8 @@ CRDT
 
 [[ schematic ]]
 
-Counter Examples
-================
+Counters
+========
 
 * :fragment:`Game: Experience`
 * :fragment:`Chat: Last Message Id`
@@ -265,19 +265,26 @@ Unread Messages
 Lattice
 =======
 
+
+Lattice
+=======
+
 .. image:: lattice-birdview.svg
+   :class: up
 
 
 Lattice
 =======
 
 .. image:: lattice-crdt.svg
+   :class: up
 
 
 Lattice
 =======
 
 .. image:: lattice-values.svg
+   :class: up
 
 
 Lattice

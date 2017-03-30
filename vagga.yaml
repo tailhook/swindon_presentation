@@ -23,7 +23,7 @@ commands:
     - rst2html5
     - --jquery
     - --reveal-js
-    - --reveal-js-opts=theme=blood
+    - --reveal-js-opts=theme=blood,width=640,height=480,maxScale=10,margin=0.1
     - --stylesheet-path=my.css
     - --embed-content
     - --pygments
@@ -37,7 +37,8 @@ commands:
     - rst2html5
     - --jquery
     - --reveal-js
-    - --reveal-js-opts=theme=black
+    - --reveal-js-opts=theme=black,width=640,height=480,maxScale=10,margin=0.1
+    - --stylesheet-path=my.css
     - --embed-content
     - --pygments
     - presentation.rst
@@ -50,7 +51,8 @@ commands:
     - rst2html5
     - --jquery
     - --reveal-js
-    - --reveal-js-opts=theme=white
+    - --reveal-js-opts=theme=white,width=640,height=480,maxScale=10,margin=0.1
+    - --stylesheet-path=my.css
     - --embed-content
     - --pygments
     - presentation.rst
@@ -63,7 +65,8 @@ commands:
     - rst2html5
     - --jquery
     - --reveal-js
-    - --reveal-js-opts=theme=simple,printpdf=true
+    - --reveal-js-opts=theme=simple,printpdf=true,width=640,height=480,maxScale=10,margin=0.1
+    - --stylesheet-path=my.css
     - --embed-content
     - --pygments
     - presentation.rst
