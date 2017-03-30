@@ -5,6 +5,9 @@
 .. role:: fragment
    :class: fragment
 
+.. role:: bold-fragment
+   :class: fragment bold
+
 .. role:: strike
    :class: strike
 
@@ -235,18 +238,46 @@ CRDT
 
 [[ schematic ]]
 
+Counter Examples
+================
+
+* :fragment:`Game: Experience`
+* :fragment:`Chat: Last Message Id`
+* :bold-fragment:`Metadata Version`
+
+
+CRDT: Money
+===========
+
+Two ever growing counters:
+
+* Earned Money
+* Spent Money
+
 
 Unread Messages
 ===============
 
-* Messages [counter]
-* Last Read [counter]
+* Total Messages
+* Last Read No.
 
 
 Lattice
 =======
 
-[[ table ]]
+.. image:: lattice-birdview.svg
+
+
+Lattice
+=======
+
+.. image:: lattice-crdt.svg
+
+
+Lattice
+=======
+
+.. image:: lattice-values.svg
 
 
 Lattice
