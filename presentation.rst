@@ -25,8 +25,8 @@ Problems
 * :fragment:`Remote Procedure Calls (RPC)`
 
 
-Classic Web Model
-=================
+Classic Web
+===========
 
 .. image:: classic-web.svg
 
@@ -68,11 +68,12 @@ Swindon
 * :fragment:`Websockets`
 
 
-Swindon
-=======
+.. class:: no-title
+
+Basic Picture
+=============
 
 .. image:: swindon-basic.svg
-   :width: 100%
 
 
 Recall: WS 1
@@ -80,8 +81,10 @@ Recall: WS 1
 .. image:: websockets-pubsub.svg
 
 
-Swindon
-=======
+.. class:: no-title
+
+Basic Picture Again
+===================
 
 .. image:: swindon-basic.svg
    :width: 100%
@@ -109,6 +112,7 @@ WS Proto
 * Pub-Sub
 * Lattice
 
+.. class:: smaller-font-2
 
 RPC
 ===
@@ -132,6 +136,8 @@ RPC Features
 * Prefix Routing
 * Sticky Auth
 
+
+.. class:: smaller-font-2
 
 Pub-Sub
 =======
@@ -236,7 +242,6 @@ CRDT
 
 * Counter/Max
 
-[[ schematic ]]
 
 Counters
 ========
@@ -266,22 +271,25 @@ Lattice
 =======
 
 
-Lattice
-=======
+.. class:: no-title
+
+Lattice Birdview
+================
 
 .. image:: lattice-birdview.svg
-   :class: up
 
+.. class:: no-title
 
-Lattice
-=======
+Lattice CRDT
+============
 
 .. image:: lattice-crdt.svg
    :class: up
 
+.. class:: no-title
 
-Lattice
-=======
+Lattice Values
+==============
 
 .. image:: lattice-values.svg
    :class: up

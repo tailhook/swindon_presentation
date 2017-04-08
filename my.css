@@ -6,7 +6,12 @@
 }
 .reveal pre {
 }
-.up {
-    position: relative;
-    top: -200px;
+.no-title header {
+    display: none;
+}
+.smaller-font span {
+    font-size: 80%;
+}
+.smaller-font-2 span {
+    font-size: 60%;
 }
