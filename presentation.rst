@@ -87,7 +87,6 @@ Basic Picture Again
 ===================
 
 .. image:: swindon-basic.svg
-   :width: 100%
 
 
 Recall: WS 2
@@ -284,7 +283,6 @@ Lattice CRDT
 ============
 
 .. image:: lattice-crdt.svg
-   :class: up
 
 .. class:: no-title
 
@@ -292,7 +290,6 @@ Lattice Values
 ==============
 
 .. image:: lattice-values.svg
-   :class: up
 
 
 Lattice
